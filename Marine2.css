@@ -1,0 +1,9 @@
+body {
+  background-image: url("./Travel.jpg");
+  background-size: cover;
+}
+
+h2:first-letter {
+  font-size: 2em;
+  color: #7172ac;
+}

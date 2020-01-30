@@ -1,0 +1,236 @@
+body {
+  background-color: white;
+  background-size: cover;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  grid-template-rows: auto auto auto auto auto auto;
+  row-gap: 1rem;
+
+  background-color: white;
+}
+
+#header {
+  display: grid;
+  grid-column: 1/3;
+  background-color: rgb(73, 72, 72);
+  padding: 0.5em; /*文字周りの余白*/
+  grid-template-columns: auto 1fr;
+  height: 1rem;
+  z-index: 10;
+}
+#header2 {
+  display: grid;
+  grid-column: 1/3;
+  background-color: rgb(189, 55, 129);
+  padding: 0.5em; /*文字周りの余白*/
+  grid-template-columns: auto 1fr;
+  height: 1rem;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 12;
+  margin-top: -1.8rem;
+  width: 100%;
+  margin-left: 20rem;
+}
+
+#header > div {
+  grid-column: 1/2;
+  position: absolute;
+  top: 0.1rem;
+  left: 2rem;
+}
+#header > p {
+  grid-column: 2/3;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.5rem;
+  color: white;
+}
+#explain {
+  display: grid;
+  grid-column: 1/3;
+  background-color: white;
+  padding: 0 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#concept {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center;
+  vertical-align: middle; /* 「vertical-align」を指定してもテキストは縦方向中央揃いにならない */
+}
+
+#current {
+  grid-column: 2/3;
+  border: 0.5rem solid rgb(73, 72, 72);
+  right: 5rem;
+  width: 10rem;
+  text-align: center;
+  z-index: 10;
+  height: 72%;
+  position: absolute;
+  color: rgb(73, 72, 72);
+}
+#current2 {
+  grid-column: 2/3;
+  border: 0.5rem solid rgb(73, 72, 72);
+
+  width: 10rem;
+  text-align: center;
+  position: absolute;
+  height: 72%;
+  z-index: 0;
+  opacity: 0.2;
+  right: 5rem;
+  position: absolute;
+}
+#temp {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 0.1rem solid black;
+  width: 8rem;
+  margin: auto;
+}
+#temp2 {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  width: 8rem;
+  margin: 0.75rem 4.5rem;
+  position: absolute;
+}
+#temp3 {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  width: 8rem;
+  margin: 2.5rem 5.5rem;
+  position: absolute;
+}
+
+#arrow {
+  margin: 2rem auto;
+  text-align: center;
+}
+#line {
+  border-left: 0.1rem solid black;
+  opacity: 0.2;
+  height: 4rem;
+  left: 50rem;
+  width: 50%;
+  margin-left: 50%;
+  display: block;
+  grid-column: 1/3;
+}
+#inline2 {
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 40rem;
+  margin: auto;
+}
+
+#chart {
+  height: 15rem;
+  display: grid;
+  grid-column: 1/3;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+#chart2 {
+  height: 15rem;
+  display: grid;
+  grid-column: 1/3;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  top: -3rem;
+}
+
+#chart3 {
+  height: 15rem;
+  display: grid;
+  grid-column: 1/3;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  top: -6rem;
+}
+
+#chart4 {
+  display: grid;
+  grid-column: 1/3;
+  position: relative;
+  margin-left: 1.5rem;
+  width: 97%;
+  grid-template-columns: repeat(90, 1fr);
+  top: -8rem;
+}
+
+.effect div {
+  transition: 1s;
+  transition-delay: 0.8s;
+}
+
+#gif {
+  grid-column: 1/3;
+  width: 50%;
+  margin: auto;
+}
+
+#logo {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#image {
+  display: grid;
+  grid-column: 1/2;
+  object-fit: cover;
+}
+
+.map {
+  display: grid;
+  grid-column: 1/3;
+  background-color: white;
+}
+#p {
+  display: grid;
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.windcheck {
+  display: grid;
+  grid-column: 1/3;
+  background-color: white;
+  padding: 20px;
+}
+
+#footer {
+  background-color: rgb(73, 72, 72);
+  grid-column: 1/3;
+}
+#footer > a {
+  text-decoration: none;
+  opacity: 1;
+}
