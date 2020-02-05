@@ -18,7 +18,7 @@ fetch(`https://api.stormglass.io/v1/weather/point?lat=${lat}&lng=${lng}`, {
     // Do something with response data.
     console.log(jsonData);
 
-    for (i = 0; i < 180; i++) {
+    for (i = 0; i < 160; i++) {
       api_json_data.push(parseFloat(jsonData.hours[i].airTemperature[0].value));
       if (i % 24 == 0) {
         label.push(parseFloat(new Date(jsonData.hours[i].time).getDate()));
